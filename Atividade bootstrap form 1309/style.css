@@ -1,0 +1,15 @@
+/* Definindo a fonte padrão e a cor de fonte padrão para todos os itens */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+/* Definindo o corpo sem margem e espaçamento interno */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    height: 100vh;
+}
