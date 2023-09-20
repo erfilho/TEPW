@@ -1,0 +1,73 @@
+/* Estilo geral do site */
+
+/* Cor padrão dos elementos */
+* {
+    color: #25282e;
+}
+
+/* Transição para âncoras e ícones */
+a, i {
+    transition: .5s;
+    text-decoration: none;
+}
+
+/* Definindo cor secundária */
+.secondary-color {
+    color: #555;
+}
+
+/* Definindo configuração padrão da imagem de fundo */
+.center-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Definindo padrão dos botões */
+.btn {
+    text-decoration: none;
+    background-color: #25282e;
+    color: #FFF;
+    padding: 7px 18px;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+/* Header */
+
+#header{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#header p {
+    margin-bottom: 0;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 40px;
+    margin-right: 15px;
+}
+
+/* Navbar */
+#navbar {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#navbar a {
+    width: 80px;
+    color: #444;
+}
+
+#navbar a:hover{
+    color: #c1b696;
+}
