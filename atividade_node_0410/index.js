@@ -1,13 +1,22 @@
 const express = require('express');
 const app = express();
 
-const exphbs = require('express-handlebars');
+const handlebars = require('express-handlebars');
 
-app.engine('handlebars', exphbs);
 app.set('view engine', 'handlebars');
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+app.engine('handlebars', handlebars.engine({
+    layoutsDir: __dirname + '/views/layouts',
+    }));
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('index');
+})
+
+app.post('/home', (req, res) => {
+    res.render('home', {name: req.body.user})
 })
 
 app.get('/welcome', (req, res) => {
